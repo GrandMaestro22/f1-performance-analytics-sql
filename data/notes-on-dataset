@@ -1,0 +1,41 @@
+# Dataset Notes
+
+This project uses the relational F1DB dataset, which provides a highly normalized structure for representing Formula 1 history. The schema includes entities for drivers, constructors, entrants, circuits, seasons, and standings.
+
+## Key Characteristics
+
+- Fully normalized relational model  
+- No telemetry or pit stop data  
+- Season-level and race-level standings  
+- Detailed constructor, engine, chassis, and tyre manufacturer relationships  
+- Historical coverage across multiple decades  
+
+## Important Tables
+
+- `driver` — driver biographical information  
+- `constructor` — team identity  
+- `season_entrant_driver` — which driver raced for which constructor in a given year  
+- `season_driver_standing` — driver points and championship position  
+- `season_constructor_standing` — constructor points and championship position  
+- `race` — race metadata  
+- `race_driver_standing` — race-level finishing positions and points  
+
+## Limitations
+
+- No pit stop data  
+- No lap-by-lap timing  
+- No qualifying results  
+- No weather or strategy data  
+
+## Usage Notes
+
+This dataset is ideal for:
+- Season-level performance analysis  
+- Constructor dominance trends  
+- Driver vs teammate comparisons  
+- Race finishing position analysis  
+
+It is not suitable for:
+- Pit stop efficiency  
+- Lap time analytics  
+- Telemetry-based insights  
